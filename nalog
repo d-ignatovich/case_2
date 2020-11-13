@@ -25,13 +25,13 @@ if y==1:
     elif annual_income>=9076 and annual_income<=36900:
         nalog:=(annual_income-9076)*0.15+907.5
     elif annual_income>=36901 and annual_income<=89350:
-        nalog:=(annual_income-36901)*0.25+(36900-9076)*0.15+907.5
+        nalog:=(annual_income-36901)*0.25+5081,1
     elif annual_income>=89351 and annual_income<=186350:
-        nalog:=(annual_income-89351)*0.28+(89350-36901)*0.25+(36900-9076)*0.15+907.5
+        nalog:=(annual_income-89351)*0.28+18193,35
     elif annual_income>=186351 and annual_income<=405100:
-        nalog:=(annual_income-186351)*0.33+(186350-89351)*0.28+(89350-36901)*0.25+(36900-9076)*0.15+907.5
+        nalog:=(annual_income-186351)*0.33+45353,07
     elif annual_income>=405101 and annual_income<=406750:
-        nalog:=(annual_income-405101)*0.35+(405100-186351)*0.33+(186350-89351)*0.28+(89350-36901)*0.25+(36900-9076)*0.15+907.5
+        nalog:=(annual_income-405101)*0.35+117540,2
     elif annual_income>=406751:
-        nalog:=(annual_income-406751)*0.396+(406750-405101)*0.35+(405100-186351)*0.33+(186350-89351)*0.28+(89350-36901)*0.25+(36900-9076)*0.15+907.5
+        nalog:=(annual_income-406751)*0.396+118117,4
     print(nalog)

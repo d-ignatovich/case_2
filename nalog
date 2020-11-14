@@ -61,3 +61,28 @@ if y==3:
     elif annual_income >=432201:
         nalog=(0.1*r+0.15*h+0.25*f+0.28*k+0.33*l+0.35*z+((annual_income)-432201)*0.396)
     print('Размер налога которой нужно уплатить: ', round(nalog, 3))
+
+# Miller A.
+
+a=18150
+b=float(73801-18151)
+c=float(148851-73801)
+d=float(226851-148851)
+f=float(405501-226851)
+g=float(457601-405101)
+if y==2:
+    if annual_income<=18150:
+        nalog=((annual_income)*0.1)
+    elif annual_income>=18151 and annual_income<=73800:
+        nalog=(0.1*a+((annual_income)-18151)*0.15)
+    elif annual_income>=73801 and annual_income<=148850:
+        nalog=(0.1*a+0.15*b+((annual_income)-73801)*0.25)
+    elif annual_income>=148851 and annual_income<=226850:
+        nalog=(0.1*a+0.15*b+0.25*c+((annual_income)-148851)*0.28)
+    elif annual_income>=226851 and annual_income<=405100:
+        nalog=(0.1*a+0.15*b+0.25*c+0.28*d+((annual_income)-226851)*0.33)
+    elif annual_income>=405101 and annual_income<=457600:
+        nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+((annual_income)-405101)*0.35)
+    elif annual_income>=457601:
+        nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+0.35*g+((annual_income-457601)*0.396))
+print('Размер налога которой нужно уплатить: ', round(nalog, 3))

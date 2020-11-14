@@ -65,6 +65,7 @@ if y==3:
 
 # Miller A.
 
+#Range for calculating tax rates at steps.
 a=18150
 b=float(73801-18151)
 c=float(148851-73801)

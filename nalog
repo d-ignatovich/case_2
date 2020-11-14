@@ -85,5 +85,5 @@ if y==2:
     elif annual_income>=405101 and annual_income<=457600:
         nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+((annual_income)-405101)*0.35)
     elif annual_income>=457601:
-        nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+0.35*g+((annual_income-457601)*0.396))
+        nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+0.35*g+((annual_income)-457601)*0.396)
     print('Размер налога, который нужно уплатить: ', round(nalog, 3))

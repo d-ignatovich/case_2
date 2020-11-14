@@ -3,35 +3,28 @@
 #               Poylova E. (30%),
 #               Miller A. (30%)
 
-# string constants
-name_month = [JAN, FAB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC]
-
-annual_income = 0
-for month in range(12):
-    print('{} {}:'.format(QUESTION,name_month[month], end ='')
-    income = float(input())
-    annual_income += income
-print(annual_income)
+print('Введите годовой доход')
+annual_income=float(input())
 print('Выберите семейный статус налогоплательщика')
-print('Введите цифру нужного варианта:', '1)один субъект', 
-                                         '2)супружеская пара', 
-                                         '3)родитель-одиночка', sep='/n')
+print('Введите цифру нужного варианта:', '1)один субъект',
+                                         '2)супружеская пара',
+                                         '3)родитель-одиночка', sep='\n')
 y=int(input())
 
 #Calculating personal income tax for a single entity.
 if y==1:
     if annual_income<=9075:
-        nalog:=(annual_income)*0.1
+        nalog=(annual_income)*0.1
     elif annual_income>=9076 and annual_income<=36900:
-        nalog:=(annual_income-9076)*0.15+907.5
+        nalog=(annual_income-9076)*0.15+907.5
     elif annual_income>=36901 and annual_income<=89350:
-        nalog:=(annual_income-36901)*0.25+5081,1
+        nalog=(annual_income-36901)*0.25+5081.1
     elif annual_income>=89351 and annual_income<=186350:
-        nalog:=(annual_income-89351)*0.28+18193,35
+        nalog=(annual_income-89351)*0.28+18193.35
     elif annual_income>=186351 and annual_income<=405100:
-        nalog:=(annual_income-186351)*0.33+45353,07
+        nalog=(annual_income-186351)*0.33+45353.07
     elif annual_income>=405101 and annual_income<=406750:
-        nalog:=(annual_income-405101)*0.35+117540,2
+        nalog=(annual_income-405101)*0.35+117540.2
     elif annual_income>=406751:
-        nalog:=(annual_income-406751)*0.396+118117,4
-    print(nalog)
+        nalog=(annual_income-406751)*0.396+118117.4
+    print('Размер налога которой нужно уплатить: ', round(nalog, 3))

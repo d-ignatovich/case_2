@@ -12,20 +12,20 @@ stage_6=float(457601-405101)*0.35+stage_5
 
 if y==2:
     if annual_income<=18150:
-        nalog=((annual_income)*0.1)
+        tax=((annual_income)*0.1)
     elif annual_income>=18151 and annual_income<=73800:
-        nalog=(stage_1+((annual_income)-18151)*0.15)
+        tax=(stage_1+((annual_income)-18151)*0.15)
     elif annual_income>=73801 and annual_income<=148850:
-        nalog=(stage_2+((annual_income)-73801)*0.25)
+        tax=(stage_2+((annual_income)-73801)*0.25)
     elif annual_income>=148851 and annual_income<=226850:
-        nalog=(stage_3+((annual_income)-148851)*0.28)
+        tax=(stage_3+((annual_income)-148851)*0.28)
     elif annual_income>=226851 and annual_income<=405100:
-        nalog=(stage_4+((annual_income)-226851)*0.33)
+        tax=(stage_4+((annual_income)-226851)*0.33)
     elif annual_income>=405101 and annual_income<=457600:
-        nalog=(stage_5+((annual_income)-405101)*0.35)
+        tax=(stage_5+((annual_income)-405101)*0.35)
     elif annual_income>=457601:
-        nalog=(stage_6+((annual_income)-457601)*0.396)
-    print('Размер налога, который нужно уплатить: ', round(nalog, 3))
+        tax=(stage_6+((annual_income)-457601)*0.396)
+    print('Размер налога, который нужно уплатить: ', round(tax, 3))
 
 
 # Poylova E.    

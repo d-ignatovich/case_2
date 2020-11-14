@@ -1,42 +1,4 @@
-# Case-study #2
-# Developers:   Ignatovich D. (40%),
-#               Poylova E. (30%),
-#               Miller A. (30%)
 
-# Ignatovich D.
-print('Введите годовой доход')
-annual_income=float(input())
-print('Выберите семейный статус налогоплательщика')
-print('Введите цифру нужного варианта:', '1)один субъект',
-                                         '2)супружеская пара',
-                                         '3)родитель-одиночка', sep='\n')
-y=int(input())
-
-
-# Calculation of tax rates at each stage for a subject.
-stage_1=9075*0.1
-stage_2=(36900-9076)*0.15+stage_1
-stage_3=(89350-36901)*0.25+stage_2
-stage_4=(186350-89351)*0.28+stage_3
-stage_5=(405100-186351)*0.33+stage_4
-stage_6=(406750-405101)*0.35+stage_5
-
-if y==1:
-    if annual_income<=9075:
-        nalog=(annual_income)*0.1
-    elif annual_income>=9076 and annual_income<=36900:
-        nalog=(annual_income-9076)*0.15+stage_1
-    elif annual_income>=36901 and annual_income<=89350:
-        nalog=(annual_income-36901)*0.25+stage_2
-    elif annual_income>=89351 and annual_income<=186350:
-        nalog=(annual_income-89351)*0.28+stage_3
-    elif annual_income>=186351 and annual_income<=405100:
-        nalog=(annual_income-186351)*0.33+stage_4
-    elif annual_income>=405101 and annual_income<=406750:
-        nalog=(annual_income-405101)*0.35+stage_5
-    elif annual_income>=406751:
-        nalog=(annual_income-406751)*0.396+stgae_6
-    print('Размер налога, который нужно уплатить: ', round(nalog, 3))
 
 
 # Miller A.

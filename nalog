@@ -28,3 +28,29 @@ if y==1:
     elif annual_income>=406751:
         nalog=(annual_income-406751)*0.396+118117.4
     print('Размер налога которой нужно уплатить: ', round(nalog, 3))
+
+#Calculating personal income tax for a single parent.
+
+#Range for calculating tax rates at steps.
+r=12951
+h=float(49401-12951)
+f=float(127551-49401)
+k=float(206601-127551)
+l=float(405101-206601)
+z=float(432201-405101)
+if y==3:
+    if annual_income<=12950:
+        nalog=((annual_income)*0.1)
+    elif annual_income>=12951 and annual_income<=49400:
+        nalog=(0.1*r+((annual_income)-12951)*0.15)
+    elif annual_income>=49401 and annual_income<=127550:
+        nalog=(0.1*r+0.15*h+((annual_income)-49401)*0.25)
+    elif annual_income>=127551 and annual_income<=206600:
+        nalog=(0.1*r+0.15*h+0.25*f+((annual_income)-127551)*0.28)
+    elif annual_income>=206601 and annual_income<=405100:
+        nalog=(0.1*r+0.15*h+0.25*f+0.28*k+((annual_income)-206601)*0.33)
+    elif annual_income>=405101 and annual_income<=432200:
+        nalog=(0.1*r+0.15*h+0.25*f+0.28*k+0.33*l+((annual_income)-405101)*0.35)
+    elif annual_income >=432201:
+        nalog=(0.1*r+0.15*h+0.25*f+0.28*k+0.33*l+0.35*z+((annual_income)-432201)*0.396)
+    print('Размер налога которой нужно уплатить: ', round(nalog, 3))

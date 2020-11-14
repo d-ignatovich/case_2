@@ -15,9 +15,10 @@ y=int(input())
 
 stage_1=9075*0.1
 stage_2=(36900-9076)*0.15+stage_1
-stage_3=(186350-89351)*0.25+stage_2
-stage_4=(405100-186351)*0.28+stage_3
-stage_5=(406750-405101)*0.33+stage_4
+stage_3=(89350-36901)*0.25+stage_2
+stage_4=(186350-89351)*0.28+stage_3
+stage_5=(405100-186351)*0.33+stage_4
+stage_6=(406750-405101)*0.35+stage_5
 
 if y==1:
     if annual_income<=9075:
@@ -33,8 +34,8 @@ if y==1:
     elif annual_income>=405101 and annual_income<=406750:
         nalog=(annual_income-405101)*0.35+stage_5
     elif annual_income>=406751:
-        nalog=(annual_income-406751)*0.396+118117.4
-    print('Размер налога которой нужно уплатить: ', round(nalog, 3))
+        nalog=(annual_income-406751)*0.396+stgae_6
+    print('Размер налога, который нужно уплатить: ', round(nalog, 3))
 
 #Calculating personal income tax for a single parent.
 
@@ -60,7 +61,7 @@ if y==3:
         nalog=(0.1*r+0.15*h+0.25*f+0.28*k+0.33*l+((annual_income)-405101)*0.35)
     elif annual_income >=432201:
         nalog=(0.1*r+0.15*h+0.25*f+0.28*k+0.33*l+0.35*z+((annual_income)-432201)*0.396)
-    print('Размер налога которой нужно уплатить: ', round(nalog, 3))
+    print('Размер налога, который нужно уплатить: ', round(nalog, 3))
 
 # Miller A.
 
@@ -85,4 +86,4 @@ if y==2:
         nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+((annual_income)-405101)*0.35)
     elif annual_income>=457601:
         nalog=(0.1*a+0.15*b+0.25*c+0.28*d+0.33*f+0.35*g+((annual_income-457601)*0.396))
-    print('Размер налога которой нужно уплатить: ', round(nalog, 3))
+    print('Размер налога, который нужно уплатить: ', round(nalog, 3))

@@ -12,19 +12,26 @@ print('Введите цифру нужного варианта:', '1)один 
 y=int(input())
 
 #Calculating personal income tax for a single entity.
+
+stage_1=9075*0.1
+stage_2=(36900-9076)*0.15+stage_1
+stage_3=(186350-89351)*0.25+stage_2
+stage_4=(405100-186351)*0.28+stage_3
+stage_5=(406750-405101)*0.33+stage_4
+
 if y==1:
     if annual_income<=9075:
         nalog=(annual_income)*0.1
     elif annual_income>=9076 and annual_income<=36900:
-        nalog=(annual_income-9076)*0.15+907.5
+        nalog=(annual_income-9076)*0.15+stage_1
     elif annual_income>=36901 and annual_income<=89350:
-        nalog=(annual_income-36901)*0.25+5081.1
+        nalog=(annual_income-36901)*0.25+stage_2
     elif annual_income>=89351 and annual_income<=186350:
-        nalog=(annual_income-89351)*0.28+18193.35
+        nalog=(annual_income-89351)*0.28+stage_3
     elif annual_income>=186351 and annual_income<=405100:
-        nalog=(annual_income-186351)*0.33+45353.07
+        nalog=(annual_income-186351)*0.33+stage_4
     elif annual_income>=405101 and annual_income<=406750:
-        nalog=(annual_income-405101)*0.35+117540.2
+        nalog=(annual_income-405101)*0.35+stage_5
     elif annual_income>=406751:
         nalog=(annual_income-406751)*0.396+118117.4
     print('Размер налога которой нужно уплатить: ', round(nalog, 3))

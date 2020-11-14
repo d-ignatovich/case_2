@@ -36,7 +36,7 @@ if y==1:
         tax=(annual_income-405101)*0.35+stage_5
     elif annual_income>=406751:
         tax=(annual_income-406751)*0.396+stgae_6
-    print('Размер налога, который нужно уплатить: ', round(nalog, 3))
+    print('Размер налога, который нужно уплатить: ', round(tax, 3))
 
 
 # Miller A.

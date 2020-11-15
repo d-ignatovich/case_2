@@ -78,11 +78,11 @@ if y==2:
 # Calculation of tax rates at each stage for a single parent.
 
 stage_1=12951*0.1
-stage_2=float(49401-12951)*0.15+stage_1
-stage_3=float(127551-49401)*0.25+stage_2
-stage_4=float(206601-127551)*0.28+stage_3
-stage_5=float(405101-206601)*0.33+stage_4
-stage_6=float(432201-405101)*0.35+stage_5
+stage_2=(49401-12951)*0.15+stage_1
+stage_3=(127551-49401)*0.25+stage_2
+stage_4=(206601-127551)*0.28+stage_3
+stage_5=(405101-206601)*0.33+stage_4
+stage_6=(432201-405101)*0.35+stage_5
 
 if y==3:
     if annual_income<=12950:

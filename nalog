@@ -4,8 +4,16 @@
 #               Miller A. (30%)
 
 # Ignatovich D.
-print('Введите годовой доход')
-annual_income=float(input())
+# string constants
+name_month = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+
+annual_income = 0
+for month in range(12):
+    print('{} {}:'.format('Укажите Ваш доход за', name_month[month], end =''))
+    income = float(input())
+    annual_income += income
+print('Ваш годовой доход =', annual_income)
+
 print('Выберите семейный статус налогоплательщика')
 print('Введите цифру нужного варианта:', '1)один субъект',
                                          '2)супружеская пара',

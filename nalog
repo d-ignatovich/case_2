@@ -50,11 +50,11 @@ if y==1:
 # Miller A.
 #Calculation of tax rates at each stage for a married couple.
 stage_1=18150*0.1
-stage_2=float(73801-18151)*0.15+stage_1
-stage_3=float(148851-73801)*0.25+stage_2
-stage_4=float(226851-148851)*0.28+stage_3
-stage_5=float(405501-226851)*0.33+stage_4
-stage_6=float(457601-405101)*0.35+stage_5
+stage_2=(73801-18151)*0.15+stage_1
+stage_3=(148851-73801)*0.25+stage_2
+stage_4=(226851-148851)*0.28+stage_3
+stage_5=(405501-226851)*0.33+stage_4
+stage_6=(457601-405101)*0.35+stage_5
 
 if y==2:
     if annual_income<=18150:
